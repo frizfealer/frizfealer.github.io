@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>System Design - Tag - Yeu-Chern&#39;s website</title>
+    <link>https://frizfealer.github.io/tags/system-design/</link>
+    <description>System Design - Tag - Yeu-Chern&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>duke3d.harn@gmail.com (Yeu-Chern Harn)</managingEditor>
+      <webMaster>duke3d.harn@gmail.com (Yeu-Chern Harn)</webMaster><lastBuildDate>Wed, 29 Mar 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://frizfealer.github.io/tags/system-design/" rel="self" type="application/rss+xml" /><item>
+  <title>Designing Machine Learning Systems - Chapter 1</title>
+  <link>https://frizfealer.github.io/designing-machine-learning-systems/</link>
+  <pubDate>Wed, 29 Mar 2023 00:00:00 &#43;0000</pubDate>
+  <author>Yeu-Chern Harn</author>
+  <guid>https://frizfealer.github.io/designing-machine-learning-systems/</guid>
+  <description><![CDATA[Designing Machine Learning Systems Author: Chip Huyen
+Publisher: O&rsquo;Reilly
+Its a reading note for this book
+Chapter 1. Overview Of Machine Learning Systems Outline When to use machine learning Understanding machine learning systems Research vs production ML system vs traditional software system Recall What are the different components of ML systems?
+possible answer infrastructure, data, feature (engineering), ML algorithm, evaluation metrics, deployment, and monitoring continuous updates (CI/CD).
+What does MLOps mean?]]></description>
+</item>
+</channel>
+</rss>

@@ -3,8 +3,7 @@
 
 ## Introduction
 
-A monotonic stack is a stack maintaining the monotonic property for its element. E.g. if it is an increasing monotonic stack, it is [x1, x2, ..., xn] such that x1 <= x2 <= ... xn.
-There are some problems when you maintain monotonic stack is useful. In these, you are asked to return the next larger number for each number in an array. The keywords here are **next (prev) greater (lesser)**
+A monotonic stack is a stack that keeps its elements in a certain order. For example, an increasing monotonic stack is [x1, x2, …, xn] where x1 <= x2 <= … xn. This means that each element is equal to or larger than the previous one. Monotonic stacks are useful for some problems, e.g. where you need to find the next greater number for each number in an array. For such problems, the key words to look for are next (prev) greater (lesser).
 
 For example, given a input array
 
@@ -185,4 +184,10 @@ def sumSubarrayMins(arr: List[int]) -> int:
         
     return ans
 ```
+
+
+---
+
+> Author: Yeu-Chern Harn  
+> URL: https://frizfealer.github.io/monotonic_stack/  
 

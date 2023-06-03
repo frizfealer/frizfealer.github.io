@@ -1,15 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Python - Tag - My New Hugo Site</title>
-        <link>http://example.org/tags/python/</link>
-        <description>Python - Tag - My New Hugo Site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 May 2023 23:03:26 -0400</lastBuildDate><atom:link href="http://example.org/tags/python/" rel="self" type="application/rss+xml" /><item>
-    <title>Monotonic Stack</title>
-    <link>http://example.org/monotonic_stack/</link>
-    <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>
-    <author>Yeu-Chern Harn</author>
-    <guid>http://example.org/monotonic_stack/</guid>
-    <description><![CDATA[Introduction A monotonic stack is a stack maintaining the monotonic property for its element. E.g. if it is an increasing monotonic stack, it is [x1, x2, &hellip;, xn] such that x1 &lt;= x2 &lt;= &hellip; xn. There are some problems when you maintain monotonic stack is useful. In these, you are asked to return the next larger number for each number in an array. The keywords here are next (prev) greater (lesser)]]></description>
+  <channel>
+    <title>Python - Tag - Yeu-Chern&#39;s website</title>
+    <link>https://frizfealer.github.io/tags/python/</link>
+    <description>Python - Tag - Yeu-Chern&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>duke3d.harn@gmail.com (Yeu-Chern Harn)</managingEditor>
+      <webMaster>duke3d.harn@gmail.com (Yeu-Chern Harn)</webMaster><lastBuildDate>Tue, 16 May 2023 23:03:26 -0400</lastBuildDate><atom:link href="https://frizfealer.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
+  <title>Monotonic Stack</title>
+  <link>https://frizfealer.github.io/monotonic_stack/</link>
+  <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>
+  <author>Yeu-Chern Harn</author>
+  <guid>https://frizfealer.github.io/monotonic_stack/</guid>
+  <description><![CDATA[Introduction A monotonic stack is a stack that keeps its elements in a certain order. For example, an increasing monotonic stack is [x1, x2, …, xn] where x1 &lt;= x2 &lt;= … xn. This means that each element is equal to or larger than the previous one. Monotonic stacks are useful for some problems, e.g. where you need to find the next greater number for each number in an array. For such problems, the key words to look for are next (prev) greater (lesser).]]></description>
 </item>
 </channel>
 </rss>
