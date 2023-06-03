@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on </title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 16 May 2023 23:03:26 -0400</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python</title>
+      <link>/tags/python/</link>
+      <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>
+      
+      <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stack</title>
+      <link>/tags/stack/</link>
+      <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>
+      
+      <guid>/tags/stack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Engineering</title>
+      <link>/tags/software-engineering/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/software-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System Design</title>
+      <link>/tags/system-design/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/system-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithm/Data Structure</title>
+      <link>/tags/algorithm/data-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/algorithm/data-structure/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
