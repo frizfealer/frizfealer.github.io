@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>My New Hugo Site</title>
+        <link>http://example.org/</link>
+        <description>This is my cool site</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 May 2023 23:03:26 -0400</lastBuildDate>
+            <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Monotonic Stack</title>
+    <link>http://example.org/monotonic_stack/</link>
+    <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>
+    <author>Yeu-Chern Harn</author>
+    <guid>http://example.org/monotonic_stack/</guid>
+    <description><![CDATA[Introduction A monotonic stack is a stack maintaining the monotonic property for its element. E.g. if it is an increasing monotonic stack, it is [x1, x2, &hellip;, xn] such that x1 &lt;= x2 &lt;= &hellip; xn. There are some problems when you maintain monotonic stack is useful. In these, you are asked to return the next larger number for each number in an array. The keywords here are next (prev) greater (lesser)]]></description>
+</item>
+</channel>
+</rss>

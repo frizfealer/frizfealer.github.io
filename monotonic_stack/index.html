@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Monotonic Stack - My New Hugo Site</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Monotonic Stack" />
+<meta property="og:description" content="Introduction A monotonic stack is a stack maintaining the monotonic property for its element. E.g. if it is an increasing monotonic stack, it is [x1, x2, &hellip;, xn] such that x1 &lt;= x2 &lt;= &hellip; xn. There are some problems when you maintain monotonic stack is useful. In these, you are asked to return the next larger number for each number in an array. The keywords here are next (prev) greater (lesser)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/monotonic_stack/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-16T23:03:26-04:00" />
+<meta property="article:modified_time" content="2023-05-17T07:44:55-04:00" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="Monotonic Stack"/>
+<meta name="twitter:description" content="Introduction A monotonic stack is a stack maintaining the monotonic property for its element. E.g. if it is an increasing monotonic stack, it is [x1, x2, &hellip;, xn] such that x1 &lt;= x2 &lt;= &hellip; xn. There are some problems when you maintain monotonic stack is useful. In these, you are asked to return the next larger number for each number in an array. The keywords here are next (prev) greater (lesser)"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/monotonic_stack/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Monotonic Stack",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/monotonic_stack\/"
+        },"genre": "posts","keywords": "Algorithm\/Data Structure, Python, stack","wordcount":  1090 ,
+        "url": "http:\/\/example.org\/monotonic_stack\/","datePublished": "2023-05-16T23:03:26-04:00","dateModified": "2023-05-17T07:44:55-04:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Yeu-Chern Harn"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My New Hugo Site"></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My New Hugo Site"></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Monotonic Stack</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Yeu-Chern Harn</a></span>&nbsp;<span class="post-category">included in <a href="/categories/blog/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Blog</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-05-16">2023-05-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1090 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#algorithm">Algorithm</a></li>
+    <li><a href="#leetcode-problems">Leetcode problems</a>
+      <ul>
+        <li><a href="#739-daily-temperatures">739. Daily Temperatures</a></li>
+        <li><a href="#503-next-greater-element-ii">503. Next Greater Element II</a></li>
+        <li><a href="#907-sum-of-subarray-minimums">907. Sum of Subarray Minimums</a>
+          <ul>
+            <li><a href="#next-less-element">Next Less Element</a></li>
+            <li><a href="#previous-greater-element">Previous Greater Element</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="introduction">Introduction</h2>
+<p>A monotonic stack is a stack maintaining the monotonic property for its element. E.g. if it is an increasing monotonic stack, it is [x1, x2, &hellip;, xn] such that x1 &lt;= x2 &lt;= &hellip; xn.
+There are some problems when you maintain monotonic stack is useful. In these, you are asked to return the next larger number for each number in an array. The keywords here are <strong>next (prev) greater (lesser)</strong></p>
+<p>For example, given a input array</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">input_array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The next greater number for each element is</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">next_larger</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>If there is no such value, we set it as -1. For the last element, since there is no value after that, it always set to -1.</p>
+<p>A brute-force solution uses a nested-for-loop, where the outer loop goes through each element, and the inner loop searches for the next greater element. It&rsquo;s an O(n^2) solution. However; using a monotonic stack, we only go through the array one time to construct the next larger number and it&rsquo;s an O(n) solution.</p>
+<h2 id="algorithm">Algorithm</h2>
+<p>Here are some good references for the algorithm (<a href="https://labuladong.gitbook.io/algo-en/ii.-data-structure/monotonicstack" target="_blank" rel="noopener noreffer ">ref1</a>, <a href="https://stackoverflow.com/questions/55780200/intuition-behind-using-a-monotonic-stack" target="_blank" rel="noopener noreffer ">ref2</a>). It maintains a monotonic decreasing stack. Let&rsquo;s say if your input is sorted and all unique, e.g. [1, 3, 4, 5], then the next greater element is always the next one. However, if there are some decreasing orders or duplicated values, we cannot determine the next greater when we saw them. Rather, we put them in the stack, and if later we encounter a greater one. For example</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">input_array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Going from 6 to 3, we see a decreasing order and don&rsquo;t know the next greater element. We keep them in a monotonic stack. Only when we see the fifth element (4), we know it is the next greater element we are looking for at least for the last element. We then look back into the stack to see if there are other elements also see this as the next greater. In this case, both third and fourth elements are, and they are pop out of the stack.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>After popping out the &ldquo;3&quot;s, we can still maintain the monotonic stack. Next, we encounter five, following the same logic, we pop out the &ldquo;4&quot;s, and the stack becomes</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>When seeing 6 in the end, we pop out 5 and the stack becomes</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Since we maintain this monotonic decrease in the process, <em>whenever we see the violation of monotonic decreasing, we know there we can find the next greater element.</em> For each pop, we record the popped element and the current element as the current element is the next greater element in the stack.</p>
+<h2 id="leetcode-problems">Leetcode problems</h2>
+<p>(### 496. Next Greater Element I)</p>
+<p>For reference, the brute-force solution is</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">nextGreaterElement</span><span class="p">(</span><span class="n">nums1</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">nums2</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">num2idx</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span><span class="p">:</span> <span class="n">idx</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">nums2</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">  <span class="n">ans</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">nums1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">idx</span> <span class="o">=</span> <span class="n">num2idx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">next_g</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums2</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">      <span class="k">if</span> <span class="n">nums2</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">i</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">next_g</span> <span class="o">=</span> <span class="n">nums2</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">next_g</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">ans</span>  
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>And monotonic-stack solution is</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">nextGreaterElement</span><span class="p">(</span><span class="n">nums1</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">nums2</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">num2ng</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">nums2</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">ans</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums2</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">stack</span> <span class="ow">and</span> <span class="n">nums2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">num2ng</span><span class="p">[</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()]</span> <span class="o">=</span> <span class="n">nums2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">nums2</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">nums1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num2ng</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">ans</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="739-daily-temperatures">739. Daily Temperatures</h3>
+<p>This is similar to the problem 496. But instead of asking for return the value, it asking return the difference between indices.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">dailyTemperatures</span><span class="p">(</span><span class="n">T</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">ans</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">stack</span> <span class="ow">and</span> <span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">T</span><span class="p">[</span><span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">index</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">      <span class="n">ans</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="n">index</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">ans</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="503-next-greater-element-ii">503. Next Greater Element II</h3>
+<p>This is a bit tricky as it set the array to be circular. We can double the array, either physically or virtually to simulate the circular condition in this problem.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">nextGreaterElements</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">ans</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">      <span class="k">while</span> <span class="n">stack</span> <span class="ow">and</span> <span class="n">nums</span><span class="p">[</span><span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span> <span class="o">&lt;</span> <span class="n">nums</span><span class="p">[</span><span class="n">idx</span><span class="o">%</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)]:</span>
+</span></span><span class="line"><span class="cl">          <span class="n">ans</span><span class="p">[</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()]</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="n">idx</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">      <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">ans</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="907-sum-of-subarray-minimums">907. Sum of Subarray Minimums</h3>
+<p>Before going through this problem, let&rsquo;s check the two variants</p>
+<h4 id="next-less-element">Next Less Element</h4>
+<p>Instead of return the next greater element, here we are asked to return the next less. The difference is we maintain a monotonic increasing stack.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">nextLessElement</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">  <span class="n">ans</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">stack</span> <span class="ow">and</span> <span class="n">nums</span><span class="p">[</span><span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span> <span class="o">&gt;</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">ans</span><span class="p">[</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()]</span> <span class="o">=</span> <span class="n">i</span>
+</span></span><span class="line"><span class="cl">    <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">ans</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="previous-greater-element">Previous Greater Element</h4>
+<p>Instead of return the next greater element, here we are asked to return the previous greater element. While it is also a valid solution to go through the input backward, the solution below goes through the input forward. This solution is valid because the elements that are less than or equal to the current element in the stack are pop, so we only see the previous greater element. Also, these poped elements are not used anymore because the current elements we pushed will be the previous greater element afterward.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">prevGreaterElement</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">  <span class="n">ans</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">stack</span> <span class="ow">and</span> <span class="n">nums</span><span class="p">[</span><span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span> <span class="o">&lt;=</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">stack</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">ans</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">ans</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>With these two variable functions in mind, we can solve the problem 907 easily.</p>
+<p>Please see this <a href="https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step" target="_blank" rel="noopener noreffer ">post</a> for the detailed explanation of the algorithm.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">sumSubarrayMins</span><span class="p">(</span><span class="n">arr</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># distance to the left least element</span>
+</span></span><span class="line"><span class="cl">  <span class="n">left</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># distance to the right least elemnt</span>
+</span></span><span class="line"><span class="cl">  <span class="n">right</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">n_stack</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">p_stack</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">n_stack</span> <span class="ow">and</span> <span class="n">arr</span><span class="p">[</span><span class="n">n_stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span> <span class="o">&gt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">idx</span> <span class="o">=</span> <span class="n">n_stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">      <span class="n">right</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="n">idx</span>
+</span></span><span class="line"><span class="cl">    <span class="n">n_stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">p_stack</span> <span class="ow">and</span> <span class="n">arr</span><span class="p">[</span><span class="n">p_stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span> <span class="o">&gt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">p_stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">p_stack</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="n">p_stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">p_stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">      <span class="n">ans</span> <span class="o">+=</span> <span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">right</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">      <span class="n">ans</span> <span class="o">%=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">9</span> <span class="o">+</span> <span class="mi">7</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">ans</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-05-17</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/monotonic_stack/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/monotonic_stack/" data-title="Monotonic Stack" data-via="xxxx" data-hashtags="Algorithm/Data Structure,Python,stack"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/monotonic_stack/" data-hashtag="Algorithm/Data Structure"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/monotonic_stack/" data-title="Monotonic Stack"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://example.org/monotonic_stack/" data-title="Monotonic Stack"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://example.org/monotonic_stack/" data-title="Monotonic Stack"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/algorithm/data-structure/">Algorithm/Data Structure</a>,&nbsp;<a href="/tags/python/">Python</a>,&nbsp;<a href="/tags/stack/">stack</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Yeu-Chern Harn</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

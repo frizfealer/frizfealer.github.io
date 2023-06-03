@@ -1,0 +1,13 @@
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    ><url>
+            <loc>http://example.org/categories/blog/</loc><lastmod>2023-05-17T07:44:55-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/categories/</loc><lastmod>2023-05-17T07:44:55-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/monotonic_stack/</loc><lastmod>2023-05-17T07:44:55-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/</loc><lastmod>2023-05-17T07:44:55-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/posts/</loc><lastmod>2023-05-17T07:44:55-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/python/</loc><lastmod>2023-05-17T07:44:55-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/stack/</loc><lastmod>2023-05-17T07:44:55-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/</loc><lastmod>2023-05-17T07:44:55-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/algorithm/data-structure/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
