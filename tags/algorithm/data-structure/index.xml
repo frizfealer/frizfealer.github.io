@@ -1,18 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Algorithm/Data Structure on </title>
-    <link>/tags/algorithm/data-structure/</link>
-    <description>Recent content in Algorithm/Data Structure on </description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/tags/algorithm/data-structure/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Monotonic Stack</title>
-      <link>/posts/monotonic_stack/</link>
-      <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>
-      
-      <guid>/posts/monotonic_stack/</guid>
-      <description>Introduction A monotonic stack is a stack that keeps its elements in a certain order. For example, an increasing monotonic stack is [x1, x2, …, xn] where x1 &amp;lt;= x2 &amp;lt;= … xn. This means that each element is equal to or larger than the previous one. Monotonic stacks are useful for some problems, e.g. where you need to find the next greater number for each number in an array. For such problems, the key words to look for are next (prev) greater (lesser).</description>
-    </item>
-    
-  </channel>
+    <title>Algorithm/Data Structure - Tag - </title>
+    <link>https://frizfealer.github.io/tags/algorithm/data-structure/</link>
+    <description>Algorithm/Data Structure - Tag - </description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://frizfealer.github.io/tags/algorithm/data-structure/" rel="self" type="application/rss+xml" /><item>
+  <title>Monotonic Stack</title>
+  <link>https://frizfealer.github.io/posts/monotonic_stack/</link>
+  <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>
+  <author>Author</author>
+  <guid>https://frizfealer.github.io/posts/monotonic_stack/</guid>
+  <description><![CDATA[Introduction A monotonic stack is a stack that keeps its elements in a certain order. For example, an increasing monotonic stack is [x1, x2, …, xn] where x1 &lt;= x2 &lt;= … xn. This means that each element is equal to or larger than the previous one. Monotonic stacks are useful for some problems, e.g. where you need to find the next greater number for each number in an array. For such problems, the key words to look for are next (prev) greater (lesser).]]></description>
+</item>
+</channel>
 </rss>

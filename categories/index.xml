@@ -1,28 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Categories on </title>
-    <link>/categories/</link>
-    <description>Recent content in Categories on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 16 May 2023 23:03:26 -0400</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Topic</title>
-      <link>/categories/topic/</link>
-      <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>
-      
-      <guid>/categories/topic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Book Note</title>
-      <link>/categories/book-note/</link>
-      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/book-note/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+    <title>Categories - Category - </title>
+    <link>https://frizfealer.github.io/categories/</link>
+    <description>Categories - Category - </description>
+    <generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 16 May 2023 23:03:26 -0400</lastBuildDate><atom:link href="https://frizfealer.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+  <title>Topic</title>
+  <link>https://frizfealer.github.io/categories/topic/</link>
+  <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>
+  <author>Author</author>
+  <guid>https://frizfealer.github.io/categories/topic/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Book Note</title>
+  <link>https://frizfealer.github.io/categories/book-note/</link>
+  <pubDate>Wed, 29 Mar 2023 00:00:00 &#43;0000</pubDate>
+  <author>Author</author>
+  <guid>https://frizfealer.github.io/categories/book-note/</guid>
+  <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>
