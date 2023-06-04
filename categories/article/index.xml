@@ -3,12 +3,21 @@
     <title>Article - Category - </title>
     <link>https://frizfealer.github.io/categories/article/</link>
     <description>Article - Category - </description>
-    <generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 16 May 2023 23:03:26 -0400</lastBuildDate><atom:link href="https://frizfealer.github.io/categories/article/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 03 Jun 2023 17:45:05 -0400</lastBuildDate><atom:link href="https://frizfealer.github.io/categories/article/" rel="self" type="application/rss+xml" /><item>
+  <title>First_post</title>
+  <link>https://frizfealer.github.io/first_post/</link>
+  <pubDate>Sat, 03 Jun 2023 17:45:05 -0400</pubDate>
+  <author>xxxx</author>
+  <guid>https://frizfealer.github.io/first_post/</guid>
+  <description><![CDATA[<h1 id="markdown-扩展语法">Markdown 扩展语法</h1>
+<p><strong>FixIt</strong> 主题提供了一些扩展的语法便于你撰写文章。</p>]]></description>
+</item>
+<item>
   <title>Monotonic Stack</title>
-  <link>https://frizfealer.github.io/posts/monotonic_stack/</link>
+  <link>https://frizfealer.github.io/monotonic_stack/</link>
   <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>
-  <author>Author</author>
-  <guid>https://frizfealer.github.io/posts/monotonic_stack/</guid>
+  <author>xxxx</author>
+  <guid>https://frizfealer.github.io/monotonic_stack/</guid>
   <description><![CDATA[Introduction A monotonic stack is a stack that keeps its elements in a certain order. For example, an increasing monotonic stack is [x1, x2, …, xn] where x1 &lt;= x2 &lt;= … xn. This means that each element is equal to or larger than the previous one. Monotonic stacks are useful for some problems, e.g. where you need to find the next greater number for each number in an array. For such problems, the key words to look for are next (prev) greater (lesser).]]></description>
 </item>
 </channel>

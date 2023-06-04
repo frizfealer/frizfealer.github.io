@@ -5,11 +5,12 @@
     <description>Software Engineering - Tag - </description>
     <generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 29 Mar 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://frizfealer.github.io/tags/software-engineering/" rel="self" type="application/rss+xml" /><item>
   <title>Designing Machine Learning Systems (1)</title>
-  <link>https://frizfealer.github.io/posts/designing_machine_learning_systems_1/</link>
+  <link>https://frizfealer.github.io/designing_machine_learning_systems_1/</link>
   <pubDate>Wed, 29 Mar 2023 00:00:00 &#43;0000</pubDate>
-  <author>Author</author>
-  <guid>https://frizfealer.github.io/posts/designing_machine_learning_systems_1/</guid>
-  <description><![CDATA[Book Info Title: Designing Machine Learning Systems Author: Chip Huyen
+  <author>xxxx</author>
+  <guid>https://frizfealer.github.io/designing_machine_learning_systems_1/</guid>
+  <description><![CDATA[Book Info Title: Designing Machine Learning Systems
+Author: Chip Huyen
 Publisher: O&rsquo;Reilly
 This is a reading note for this book.
 Chapter 1. Overview Of Machine Learning Systems Outline When to use machine learning Understanding machine learning systems Research vs production ML system vs traditional software system Recall What are the different components of ML systems? What does MLOps mean? What does a machine learning solution do? What’s the difference between a traditional algorithm and an ML algorithm?]]></description>

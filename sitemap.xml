@@ -2,17 +2,19 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>https://frizfealer.github.io/</loc><lastmod>2023-05-16T23:03:26-04:00</lastmod></url><url>
-      <loc>https://frizfealer.github.io/categories/article/</loc><lastmod>2023-05-16T23:03:26-04:00</lastmod></url><url>
-      <loc>https://frizfealer.github.io/categories/</loc><lastmod>2023-05-16T23:03:26-04:00</lastmod></url><url>
-      <loc>https://frizfealer.github.io/posts/monotonic_stack/</loc><lastmod>2023-05-16T23:03:26-04:00</lastmod></url><url>
-      <loc>https://frizfealer.github.io/posts/</loc><lastmod>2023-05-16T23:03:26-04:00</lastmod></url><url>
-      <loc>https://frizfealer.github.io/tags/python/</loc><lastmod>2023-05-16T23:03:26-04:00</lastmod></url><url>
-      <loc>https://frizfealer.github.io/tags/stack/</loc><lastmod>2023-05-16T23:03:26-04:00</lastmod></url><url>
-      <loc>https://frizfealer.github.io/tags/</loc><lastmod>2023-05-16T23:03:26-04:00</lastmod></url><url>
-      <loc>https://frizfealer.github.io/categories/book-note/</loc><lastmod>2023-03-29T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>https://frizfealer.github.io/posts/designing_machine_learning_systems_1/</loc><lastmod>2023-03-29T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>https://frizfealer.github.io/tags/machine-learning/</loc><lastmod>2023-03-29T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>https://frizfealer.github.io/tags/software-engineering/</loc><lastmod>2023-03-29T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>https://frizfealer.github.io/tags/system-design/</loc><lastmod>2023-03-29T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>https://frizfealer.github.io/tags/algorithm/data-structure/</loc></url></urlset>
+      <loc>https://frizfealer.github.io/</loc><lastmod>2023-06-03T17:45:05-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://frizfealer.github.io/categories/article/</loc><lastmod>2023-06-03T17:45:05-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://frizfealer.github.io/categories/</loc><lastmod>2023-06-03T17:45:05-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://frizfealer.github.io/tags/draft/</loc><lastmod>2023-06-03T17:45:05-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://frizfealer.github.io/first_post/</loc><lastmod>2023-06-03T17:45:05-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://frizfealer.github.io/posts/</loc><lastmod>2023-06-03T17:45:05-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://frizfealer.github.io/tags/</loc><lastmod>2023-06-03T17:45:05-04:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://frizfealer.github.io/monotonic_stack/</loc><lastmod>2023-05-16T23:03:26-04:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+      <loc>https://frizfealer.github.io/tags/python/</loc><lastmod>2023-05-16T23:03:26-04:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+      <loc>https://frizfealer.github.io/tags/stack/</loc><lastmod>2023-05-16T23:03:26-04:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+      <loc>https://frizfealer.github.io/categories/book-note/</loc><lastmod>2023-03-29T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://frizfealer.github.io/designing_machine_learning_systems_1/</loc><lastmod>2023-03-29T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://frizfealer.github.io/tags/machine-learning/</loc><lastmod>2023-03-29T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://frizfealer.github.io/tags/software-engineering/</loc><lastmod>2023-03-29T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://frizfealer.github.io/tags/system-design/</loc><lastmod>2023-03-29T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://frizfealer.github.io/tags/algorithm/data-structure/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
