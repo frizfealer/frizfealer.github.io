@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Article - Category - </title>
-    <link>https://frizfealer.github.io/categories/article/</link>
-    <description>Article - Category - </description>
-    <generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 19 Jun 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://frizfealer.github.io/categories/article/" rel="self" type="application/rss+xml" /><item>
+    <title>Metaphysics - Tag - </title>
+    <link>https://frizfealer.github.io/tags/metaphysics/</link>
+    <description>Metaphysics - Tag - </description>
+    <generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 19 Jun 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://frizfealer.github.io/tags/metaphysics/" rel="self" type="application/rss+xml" /><item>
   <title>時間是什麼？</title>
   <link>https://frizfealer.github.io/what_is_time/</link>
   <pubDate>Mon, 19 Jun 2023 00:00:00 &#43;0000</pubDate>
@@ -17,14 +17,6 @@
 我覺得這兩個都說得通，不是很明確空間是由時間而來，有可能是一起出現。
 額外的思考實驗 設想如果沒有時間，過去現在未來都同時發生(All at once) 你隨時可以看到在在公司的我和在家的我，所以你沒辦法區分這是兩的不同的地方。 同理可證任何地方都沒辦法區分。因此沒有時間，也沒有了空間
 雜想：頭腦的能力 “時間的陷阱”一書提到：我們的頭腦，憑藉著記憶，比較，關聯，可以推演出時間，或著空間。 沒有記憶，比較，關聯，我們就沒辦法理解這個世界。 這裡我聯想到道德經第二章：“故有無相生，難易相成，長短相形，高下相傾，音聲相和，前後相隨” :沒有高就沒有低，沒有長就沒有短，二元對立的比較是我們理解這個世界的方法。]]></description>
-</item>
-<item>
-  <title>Monotonic Stack</title>
-  <link>https://frizfealer.github.io/monotonic_stack/</link>
-  <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>
-  <author>xxxx</author>
-  <guid>https://frizfealer.github.io/monotonic_stack/</guid>
-  <description><![CDATA[Introduction A monotonic stack is a stack that keeps its elements in a certain order. For example, an increasing monotonic stack is [x1, x2, …, xn] where x1 &lt;= x2 &lt;= … xn. This means that each element is equal to or larger than the previous one. Monotonic stacks are useful for some problems, e.g. where you need to find the next greater number for each number in an array. For such problems, the key words to look for are next (prev) greater (lesser).]]></description>
 </item>
 </channel>
 </rss>

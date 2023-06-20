@@ -1,3 +1,3 @@
-https://frizfealer.github.io/first_post/
+https://frizfealer.github.io/what_is_time/
 https://frizfealer.github.io/monotonic_stack/
 https://frizfealer.github.io/designing_machine_learning_systems_1/
