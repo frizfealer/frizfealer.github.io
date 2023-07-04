@@ -18,7 +18,7 @@ Publisher: O&rsquo;Reilly
 This is a reading note for this book.
 Chapter 1. Overview Of Machine Learning Systems Outline When to use machine learning Understanding machine learning systems Research vs production ML system vs traditional software system Recall What are the different components of ML systems? What does MLOps mean? What does a machine learning solution do? What’s the difference between a traditional algorithm and an ML algorithm?"><meta itemprop="datePublished" content="2023-03-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-03-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="647">
+<meta itemprop="wordCount" content="1278">
 <meta itemprop="keywords" content="Machine Learning,System Design,Software Engineering," /><meta property="og:title" content="Designing Machine Learning Systems (1)" />
 <meta property="og:description" content="Book Info Title: Designing Machine Learning Systems
 Author: Chip Huyen
@@ -48,7 +48,7 @@ Chapter 1. Overview Of Machine Learning Systems Outline When to use machine lear
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https:\/\/frizfealer.github.io\/designing_machine_learning_systems_1\/"
-    },"genre": "posts","keywords": "Machine Learning, System Design, Software Engineering","wordcount":  647 ,
+    },"genre": "posts","keywords": "Machine Learning, System Design, Software Engineering","wordcount":  1278 ,
     "url": "https:\/\/frizfealer.github.io\/designing_machine_learning_systems_1\/","datePublished": "2023-03-29T00:00:00+00:00","dateModified": "2023-03-29T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -133,7 +133,7 @@ Chapter 1. Overview Of Machine Learning Systems Outline When to use machine lear
       <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
       Yeu-Chern Harn</span></span>
           <span class="post-category">included in <a href="/categories/book-note/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Book Note</a></span></div>
-      <div class="post-meta-line"><span title="published on 2023-03-29 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-03-29">2023-03-29</time></span>&nbsp;<span title="Updated on 2023-03-29 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-03-29">2023-03-29</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>647 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>4 minutes</span>&nbsp;</div>
+      <div class="post-meta-line"><span title="published on 2023-03-29 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-03-29">2023-03-29</time></span>&nbsp;<span title="Updated on 2023-03-29 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-03-29">2023-03-29</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>1278 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>6 minutes</span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>Contents</span>
@@ -148,6 +148,15 @@ Chapter 1. Overview Of Machine Learning Systems Outline When to use machine lear
         <li><a href="#recall">Recall</a></li>
         <li><a href="#possible-answers-to-recall">Possible Answers to Recall</a></li>
         <li><a href="#summary">Summary</a></li>
+      </ul>
+    </li>
+    <li><a href="#chapter-2-introduction-to-machine-learningsystems-design">Chapter 2. Introduction to Machine Learning Systems Design</a>
+      <ul>
+        <li><a href="#outline-1">Outline</a></li>
+        <li><a href="#good-reference">Good reference</a></li>
+        <li><a href="#recall-1">Recall</a></li>
+        <li><a href="#possible-answers-to-recall-1">Possible Answers to Recall</a></li>
+        <li><a href="#summary-1">Summary</a></li>
       </ul>
     </li>
   </ul>
@@ -281,7 +290,110 @@ Chapter 1. Overview Of Machine Learning Systems Outline When to use machine lear
     </div>
   </div>
 <h3 id="summary">Summary</h3>
-<p>Machine learning (ML) systems can solve problems with complex patterns that are difficult to code. However, this comes at the price of a more complex data processing, service computation, and continuous integration/continuous deployment (MLOps). This chapter also covers common ML system use cases for both customers and enterprises. Finally, the chapter discusses the differences between ML in research and in production.**</p>
+<p>Machine learning (ML) systems can solve problems with complex patterns that are difficult to code. However, this comes at the price of a more complex data processing, service computation, and continuous integration/continuous deployment (MLOps). This chapter also covers common ML system use cases for both customers and enterprises. Finally, the chapter discusses the differences between ML in research and in production.</p>
+<br>
+<h2 id="chapter-2-introduction-to-machine-learningsystems-design">Chapter 2. Introduction to Machine Learning Systems Design</h2>
+<h3 id="outline-1">Outline</h3>
+<ol>
+<li>Business and ML Objective</li>
+<li>Requirements of ML systems</li>
+<li>The iterative development process of ML systems.</li>
+<li>Framing ML problems</li>
+<li>Mind versus data</li>
+</ol>
+<h3 id="good-reference">Good reference</h3>
+<p><a href="https://github.com/eugeneyan/applied-ml"target="_blank" rel="external nofollow noopener noreferrer">applied-ml: curated papers, articles, and blogs on data science &amp; machine learning in production</a></p>
+<h3 id="recall-1">Recall</h3>
+<ol>
+<li>How to align Business and ML Objectives?</li>
+<li>What are the four requirements of ML systems and what do they mean?</li>
+<li>ML system development process involves many steps. What are they?</li>
+<li>What are the different types of ML tasks?</li>
+<li>How do you formulate multi-label ML tasks?</li>
+<li>Whats the design strategy when you want to optimize multiple objectives of a ML algorithm?</li>
+</ol>
+<h3 id="possible-answers-to-recall-1">Possible Answers to Recall</h3>
+<div class="details admonition note open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i>answers<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><ol>
+<li>
+<p>How to align Business and ML Objectives?</p>
+<p>A: Can be done in the following steps.</p>
+<ol>
+<li>Know what metrics business care about. e.g. sales: conversion rate.</li>
+<li>Tie the performance of an ML system to the overall business performance. You may need to conduct A/B tests to know how ML metrics influence business metrics.</li>
+<li>If the metrics of ML system and of the business are not aligned enough. Define custom ML metrics for better alignment, e.g. Netflix has take-rate: the number of quality plays divided by the number of recommendations a user sees.</li>
+</ol>
+</li>
+<li>
+<p>What are the four requirements of ML systems and what do they mean?</p>
+<p>A:</p>
+<ol>
+<li>Reliability: The system should continue to
+perform the correct function at the desired level of performance even in the face of adversity. how do you measure the correctness of your model? (Using new test set, monitoring some metrics).</li>
+<li>Scalability
+<table>
+<thead>
+<tr>
+<th>System Growth</th>
+<th>Solutions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>parameters in models</td>
+<td>distributed training</td>
+</tr>
+<tr>
+<td>traffic volume of service</td>
+<td>auto-scaling</td>
+</tr>
+<tr>
+<td>many ML models</td>
+<td>experiment and data version tracking</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Maintainability: Code should be documented. Code, data, and artifacts should be versioned. ML engineers, subject matter experts, and software engineers can work together easily.</li>
+<li>Adaptability: the system should be adaptive to business requirement changes and data distribution changes.</li>
+</ol>
+</li>
+<li>
+<p>ML system development process involves many steps. What are they?</p>
+<p>A: Project scoping, data engineering, model development, service deployment, monitoring and continuous learning, and business analysis.</p>
+</li>
+<li>
+<p>What are the different types of ML tasks?</p>
+<p>A: Regression, classification(binary/multi-class (could be low or high cardinality), multi-label), recommendation.</p>
+</li>
+<li>
+<p>How do you formulate multi-label ML tasks?</p>
+<p>A: You can formulate this into multiple binary classification problems. You can also formulate it as a multi-class classification.</p>
+</li>
+<li>
+<p>Whats the design strategy when you want to optimize multiple objectives of a ML algorithm?</p>
+<p>A: You can have the objective function to be
+$$
+obj_{all} = \alpha obj_1 + \beta obj_2 + \dots
+$$
+if you want to systematically select alpha and beta, you can use pareto frontier. Any solution on the frontier cannot be improved in any of the objectives without degrading at least one of the other objectives.
+<a href="https://en.wikipedia.org/wiki/Multi-objective_optimization#/media/File:Front_pareto.svg"target="_blank" rel="external nofollow noopener noreferrer">multi-objective optimization from Wiki.</a>
+<strong>However the book suggested another approach, that is having a model for each objective function. And you only tune each models output score when you want to weigh differently ,</strong>
+$$
+score_{all} = \alpha score_1 + \beta score_2 + \dots
+$$
+Therefore, you don’t need to re-train the model because of different alpha and beta. This idea is like boosting!</p>
+</li>
+</ol>
+</div>
+    </div>
+  </div>
+<h3 id="summary-1">Summary</h3>
+<p>The objective of machine learning (ML) systems should be driven by business needs since these systems are designed to serve business goals. ML systems should also have the same qualities as other software systems, such as reliability, scalability, maintainability, and adaptability (although the methods and metrics for achieving and measuring these qualities may differ from traditional software systems). Regression and classification are typical ML tasks. The book recommends training separate models for each objective function when we have multiple objectives to optimize and then combining their outputs with different weights. Finally, the book discusses some of the opinions of prominent AI experts on the trade-off between model and data.</p>
 </div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
