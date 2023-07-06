@@ -1,8 +1,7 @@
 # 蛤蟆先生去看心理師讀後感
 
 
-<!--more-->
-## 緣起
+## 緣由
 最近看了亞馬遜推薦的，關於心理治療方面的書："[蛤蟆先生去看心理師" (Counselling for Toads: A Psychological Adventure.
 )](https://www.amazon.com/%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F%E5%8E%BB%E7%9C%8B%E5%BF%83%E7%90%86%E5%B8%AB%EF%BC%88%E6%9A%A2%E9%8A%B7300%E8%90%AC%E5%86%8A%EF%BC%81%E8%8B%B1%E5%9C%8B%E5%BF%83%E7%90%86%E8%AB%AE%E5%95%86%E7%B6%93%E5%85%B8%EF%BC%89-Traditional-Chinese-%E7%BE%85%E4%BC%AF%C2%B7%E7%8B%84%E4%BF%9D%E5%BE%B7-Robert-ebook/dp/B09R4L8GY2)。
 
