@@ -1,3 +1,4 @@
+https://frizfealer.github.io/counselling_for_toads/
 https://frizfealer.github.io/what_is_time/
 https://frizfealer.github.io/monotonic_stack/
 https://frizfealer.github.io/designing_machine_learning_systems_1/
