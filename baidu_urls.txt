@@ -1,3 +1,4 @@
+https://frizfealer.github.io/the_prodigal_god/
 https://frizfealer.github.io/counselling_for_toads/
 https://frizfealer.github.io/what_is_time/
 https://frizfealer.github.io/monotonic_stack/
