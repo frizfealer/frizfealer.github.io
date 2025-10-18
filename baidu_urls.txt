@@ -1,8 +1,8 @@
-https://frizfealer.github.io/chat_marker_intro/
-https://frizfealer.github.io/privacy_chat_marker_chatgpt/
-https://frizfealer.github.io/bst-inorder/
-https://frizfealer.github.io/the_prodigal_god/
-https://frizfealer.github.io/counselling_for_toads/
-https://frizfealer.github.io/what_is_time/
-https://frizfealer.github.io/monotonic_stack/
-https://frizfealer.github.io/designing_machine_learning_systems_1/
+http://localhost:1313/chat_marker_intro/
+http://localhost:1313/privacy_chat_marker_chatgpt/
+http://localhost:1313/bst-inorder/
+http://localhost:1313/the_prodigal_god/
+http://localhost:1313/counselling_for_toads/
+http://localhost:1313/what_is_time/
+http://localhost:1313/monotonic_stack/
+http://localhost:1313/designing_machine_learning_systems_1/

@@ -115,5 +115,5 @@ You have the right to:
 ---
 
 > Author: xxxx  
-> URL: https://frizfealer.github.io/privacy_chat_marker_chatgpt/  
+> URL: http://localhost:1313/privacy_chat_marker_chatgpt/  
 

@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Machine Learning - Tag - </title>
-    <link>https://frizfealer.github.io/tags/machine-learning/</link>
+    <link>http://localhost:1313/tags/machine-learning/</link>
     <description>Machine Learning - Tag - </description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Mar 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://frizfealer.github.io/tags/machine-learning/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Mar 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/machine-learning/" rel="self" type="application/rss+xml" /><item>
   <title>Designing Machine Learning Systems (1)</title>
-  <link>https://frizfealer.github.io/designing_machine_learning_systems_1/</link>
+  <link>http://localhost:1313/designing_machine_learning_systems_1/</link>
   <pubDate>Wed, 29 Mar 2023 00:00:00 &#43;0000</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/designing_machine_learning_systems_1/</guid>
+  <guid>http://localhost:1313/designing_machine_learning_systems_1/</guid>
   <description><![CDATA[Book Info Title: Designing Machine Learning Systems
 Author: Chip Huyen
 Publisher: O&rsquo;Reilly

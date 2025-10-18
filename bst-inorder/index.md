@@ -112,5 +112,5 @@ def kth_smallest(root, k):
 ---
 
 > Author: Yeu-Chern Harn  
-> URL: https://frizfealer.github.io/bst-inorder/  
+> URL: http://localhost:1313/bst-inorder/  
 

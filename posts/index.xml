@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>All Posts - </title>
-    <link>https://frizfealer.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>All Posts | </description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 17 Oct 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://frizfealer.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 17 Oct 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
   <title>ChatMarker: ChatGPT Conversation Bookmarks</title>
-  <link>https://frizfealer.github.io/chat_marker_intro/</link>
+  <link>http://localhost:1313/chat_marker_intro/</link>
   <pubDate>Fri, 17 Oct 2025 00:00:00 &#43;0000</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/chat_marker_intro/</guid>
+  <guid>http://localhost:1313/chat_marker_intro/</guid>
   <description><![CDATA[ChatMarker: ChatGPT Conversation Bookmarks Organize and navigate your ChatGPT conversations with ease
 A Chrome extension that adds powerful bookmarking and organization features to ChatGPT, making it easy to save, find, and reference important conversation moments.
 ✨ Features 📚 Bookmark Conversation Turns Save any conversation turn with a custom name and quickly jump back to it later. Perfect for:
@@ -16,10 +16,10 @@ Saving important answers for future reference Marking code snippets or examples 
 </item>
 <item>
   <title>Privacy Policy - ChatGPT Conversation Bookmarks</title>
-  <link>https://frizfealer.github.io/privacy_chat_marker_chatgpt/</link>
+  <link>http://localhost:1313/privacy_chat_marker_chatgpt/</link>
   <pubDate>Fri, 17 Oct 2025 00:00:00 &#43;0000</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/privacy_chat_marker_chatgpt/</guid>
+  <guid>http://localhost:1313/privacy_chat_marker_chatgpt/</guid>
   <description><![CDATA[Privacy Policy for ChatGPT Conversation Bookmarks, ChatMarker Last Updated: October 17, 2025
 Introduction ChatGPT Conversation Bookmarks, ChatMarker (&ldquo;the Extension&rdquo;) is committed to protecting your privacy. This privacy policy explains how the Extension handles your data.
 Data Collection and Storage What Data is Stored Locally The Extension stores the following data locally on your device only:
@@ -27,19 +27,19 @@ Bookmark Names: Custom names you provide when creating bookmarks Message Preview
 </item>
 <item>
   <title>Bst Inorder</title>
-  <link>https://frizfealer.github.io/bst-inorder/</link>
+  <link>http://localhost:1313/bst-inorder/</link>
   <pubDate>Tue, 01 Oct 2024 22:21:33 -0400</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/bst-inorder/</guid>
+  <guid>http://localhost:1313/bst-inorder/</guid>
   <description><![CDATA[Introduction of BST A binary search tree (BST) is defined as follows.
 The left subtree of a node contains only nodes with keys less than the node&rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&rsquo;s key. Both the left and right subtrees must also be binary search trees. Inorder traversal Recursively traverse the current node&rsquo;s left subtree. Visit the current node (in the figure: position green).]]></description>
 </item>
 <item>
   <title>摘要：一擲千金的上帝</title>
-  <link>https://frizfealer.github.io/the_prodigal_god/</link>
+  <link>http://localhost:1313/the_prodigal_god/</link>
   <pubDate>Wed, 20 Sep 2023 08:49:18 -0400</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/the_prodigal_god/</guid>
+  <guid>http://localhost:1313/the_prodigal_god/</guid>
   <description><![CDATA[prodigal: 一擲千金地花費所有的
 介紹 這本書是對路加福音15章 1-3, 11-32節，耶穌所說的寓言的解說
 第一章：角色介紹 這個寓言提到父親和兩個兒子，對應兩種人
@@ -50,10 +50,10 @@ The left subtree of a node contains only nodes with keys less than the node&rsqu
 </item>
 <item>
   <title>摘要：蛤蟆先生去看心理師</title>
-  <link>https://frizfealer.github.io/counselling_for_toads/</link>
+  <link>http://localhost:1313/counselling_for_toads/</link>
   <pubDate>Wed, 05 Jul 2023 00:00:00 &#43;0000</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/counselling_for_toads/</guid>
+  <guid>http://localhost:1313/counselling_for_toads/</guid>
   <description><![CDATA[緣由 最近看了亞馬遜推薦的，關於心理治療方面的書：&quot;蛤蟆先生去看心理師&quot; (Counselling for Toads: A Psychological Adventure. )。
 這是一本有趣的小書，主角是隻蛤蟆，以他和他的心理師蒼鷺之間的心理治療故事。
 摘要 根據外部資料，這本書裡面的心理治療方式稱為溝通分析(Transactional Analysis, TA)。書中提到有幾個概念。
@@ -62,10 +62,10 @@ The left subtree of a node contains only nodes with keys less than the node&rsqu
 </item>
 <item>
   <title>時間是什麼？</title>
-  <link>https://frizfealer.github.io/what_is_time/</link>
+  <link>http://localhost:1313/what_is_time/</link>
   <pubDate>Mon, 19 Jun 2023 00:00:00 &#43;0000</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/what_is_time/</guid>
+  <guid>http://localhost:1313/what_is_time/</guid>
   <description><![CDATA[緣由 最近在看楊定一博士所著的“時間的陷阱”，裡面對時間的形成有深刻的論敘。其中特別提到：空間是時間的延伸。 對我來說，這不是個好理解的概念，因此花了些時間想了這句話底層的邏輯。這篇文章主要是把我想到的一些看法記錄在這。
 時間是什麼 “時間的陷阱”一書提到：時間由比較而來。具體來說，是 比較關聯的事件 來的。我們人類學會觀察天上星體。日升日落，理解為一天的時間過了。春夏秋冬，理解為一年過了。 隨著文明發展，我們定義了全球通用的時間，可以用更精確的方法表示。
 時間和空間的關聯：我的看法 如何說空間是時間的延伸呢？以下嘗試用一些例子說明。 一個例子是我書桌上的杯子和餐桌上的杯子，這兩者是在不同位置。我怎麼知道他們在不同位置？ 可以透過測量，而沒有時間就沒有測量的概念。
@@ -77,18 +77,18 @@ The left subtree of a node contains only nodes with keys less than the node&rsqu
 </item>
 <item>
   <title>Monotonic Stack</title>
-  <link>https://frizfealer.github.io/monotonic_stack/</link>
+  <link>http://localhost:1313/monotonic_stack/</link>
   <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/monotonic_stack/</guid>
+  <guid>http://localhost:1313/monotonic_stack/</guid>
   <description><![CDATA[Introduction A monotonic stack is a stack that keeps its elements in a certain order. For example, an increasing monotonic stack is [x1, x2, …, xn] where x1 &lt;= x2 &lt;= … xn. This means that each element is equal to or larger than the previous one. Monotonic stacks are useful for some problems, e.g. where you need to find the next greater number for each number in an array. For such problems, the key words to look for are next (prev) greater (lesser).]]></description>
 </item>
 <item>
   <title>Designing Machine Learning Systems (1)</title>
-  <link>https://frizfealer.github.io/designing_machine_learning_systems_1/</link>
+  <link>http://localhost:1313/designing_machine_learning_systems_1/</link>
   <pubDate>Wed, 29 Mar 2023 00:00:00 &#43;0000</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/designing_machine_learning_systems_1/</guid>
+  <guid>http://localhost:1313/designing_machine_learning_systems_1/</guid>
   <description><![CDATA[Book Info Title: Designing Machine Learning Systems
 Author: Chip Huyen
 Publisher: O&rsquo;Reilly

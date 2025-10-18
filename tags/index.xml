@@ -1,86 +1,86 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Tags - Tag - </title>
-    <link>https://frizfealer.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Tags - Tag - </description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Oct 2024 22:21:33 -0400</lastBuildDate><atom:link href="https://frizfealer.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Oct 2024 22:21:33 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
   <title>Algorithm/Data Structure</title>
-  <link>https://frizfealer.github.io/tags/algorithm/data-structure/</link>
+  <link>http://localhost:1313/tags/algorithm/data-structure/</link>
   <pubDate>Tue, 01 Oct 2024 22:21:33 -0400</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/tags/algorithm/data-structure/</guid>
+  <guid>http://localhost:1313/tags/algorithm/data-structure/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Python</title>
-  <link>https://frizfealer.github.io/tags/python/</link>
+  <link>http://localhost:1313/tags/python/</link>
   <pubDate>Tue, 01 Oct 2024 22:21:33 -0400</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/tags/python/</guid>
+  <guid>http://localhost:1313/tags/python/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Stack</title>
-  <link>https://frizfealer.github.io/tags/stack/</link>
+  <link>http://localhost:1313/tags/stack/</link>
   <pubDate>Tue, 01 Oct 2024 22:21:33 -0400</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/tags/stack/</guid>
+  <guid>http://localhost:1313/tags/stack/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Christian Belief</title>
-  <link>https://frizfealer.github.io/tags/christian-belief/</link>
+  <link>http://localhost:1313/tags/christian-belief/</link>
   <pubDate>Wed, 20 Sep 2023 08:49:18 -0400</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/tags/christian-belief/</guid>
+  <guid>http://localhost:1313/tags/christian-belief/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Timothy Keller</title>
-  <link>https://frizfealer.github.io/tags/timothy-keller/</link>
+  <link>http://localhost:1313/tags/timothy-keller/</link>
   <pubDate>Wed, 20 Sep 2023 08:49:18 -0400</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/tags/timothy-keller/</guid>
+  <guid>http://localhost:1313/tags/timothy-keller/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Psychology</title>
-  <link>https://frizfealer.github.io/tags/psychology/</link>
+  <link>http://localhost:1313/tags/psychology/</link>
   <pubDate>Wed, 05 Jul 2023 00:00:00 &#43;0000</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/tags/psychology/</guid>
+  <guid>http://localhost:1313/tags/psychology/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>”時間的陷阱“讀後感</title>
-  <link>https://frizfealer.github.io/tags/%E6%99%82%E9%96%93%E7%9A%84%E9%99%B7%E9%98%B1%E8%AE%80%E5%BE%8C%E6%84%9F/</link>
+  <link>http://localhost:1313/tags/%E6%99%82%E9%96%93%E7%9A%84%E9%99%B7%E9%98%B1%E8%AE%80%E5%BE%8C%E6%84%9F/</link>
   <pubDate>Mon, 19 Jun 2023 00:00:00 &#43;0000</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/tags/%E6%99%82%E9%96%93%E7%9A%84%E9%99%B7%E9%98%B1%E8%AE%80%E5%BE%8C%E6%84%9F/</guid>
+  <guid>http://localhost:1313/tags/%E6%99%82%E9%96%93%E7%9A%84%E9%99%B7%E9%98%B1%E8%AE%80%E5%BE%8C%E6%84%9F/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Metaphysics</title>
-  <link>https://frizfealer.github.io/tags/metaphysics/</link>
+  <link>http://localhost:1313/tags/metaphysics/</link>
   <pubDate>Mon, 19 Jun 2023 00:00:00 &#43;0000</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/tags/metaphysics/</guid>
+  <guid>http://localhost:1313/tags/metaphysics/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Machine Learning</title>
-  <link>https://frizfealer.github.io/tags/machine-learning/</link>
+  <link>http://localhost:1313/tags/machine-learning/</link>
   <pubDate>Wed, 29 Mar 2023 00:00:00 &#43;0000</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/tags/machine-learning/</guid>
+  <guid>http://localhost:1313/tags/machine-learning/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Software Engineering</title>
-  <link>https://frizfealer.github.io/tags/software-engineering/</link>
+  <link>http://localhost:1313/tags/software-engineering/</link>
   <pubDate>Wed, 29 Mar 2023 00:00:00 &#43;0000</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/tags/software-engineering/</guid>
+  <guid>http://localhost:1313/tags/software-engineering/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>

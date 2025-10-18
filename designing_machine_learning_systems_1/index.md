@@ -173,5 +173,5 @@ The objective of machine learning (ML) systems should be driven by business need
 ---
 
 > Author: Yeu-Chern Harn  
-> URL: https://frizfealer.github.io/designing_machine_learning_systems_1/  
+> URL: http://localhost:1313/designing_machine_learning_systems_1/  
 

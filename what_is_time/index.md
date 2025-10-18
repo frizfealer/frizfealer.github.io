@@ -35,5 +35,5 @@
 ---
 
 > Author: Yeu-Chern Harn  
-> URL: https://frizfealer.github.io/what_is_time/  
+> URL: http://localhost:1313/what_is_time/  
 

@@ -118,7 +118,7 @@ If bookmark buttons don't appear next to your ChatGPT messages:
 The extension automatically detects new messages, but a refresh helps if something goes wrong during page load.
 
 **Still having issues?**
-- send an email to duke3d.harn@gmail.com, describe the issue you encountered, and I will fix it.
+- send an email to aihavefun38@gmail.com, describe the issue you encountered, and I will fix it.
 
 ---
 
@@ -152,5 +152,5 @@ This extension complies with:
 ---
 
 > Author: xxxx  
-> URL: https://frizfealer.github.io/chat_marker_intro/  
+> URL: http://localhost:1313/chat_marker_intro/  
 

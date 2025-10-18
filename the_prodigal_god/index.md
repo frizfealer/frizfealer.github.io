@@ -58,5 +58,5 @@
 ---
 
 > Author: Yeu-Chern Harn  
-> URL: https://frizfealer.github.io/the_prodigal_god/  
+> URL: http://localhost:1313/the_prodigal_god/  
 

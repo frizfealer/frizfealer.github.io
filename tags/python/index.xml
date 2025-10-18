@@ -1,23 +1,23 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Python - Tag - </title>
-    <link>https://frizfealer.github.io/tags/python/</link>
+    <link>http://localhost:1313/tags/python/</link>
     <description>Python - Tag - </description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Oct 2024 22:21:33 -0400</lastBuildDate><atom:link href="https://frizfealer.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Oct 2024 22:21:33 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/python/" rel="self" type="application/rss+xml" /><item>
   <title>Bst Inorder</title>
-  <link>https://frizfealer.github.io/bst-inorder/</link>
+  <link>http://localhost:1313/bst-inorder/</link>
   <pubDate>Tue, 01 Oct 2024 22:21:33 -0400</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/bst-inorder/</guid>
+  <guid>http://localhost:1313/bst-inorder/</guid>
   <description><![CDATA[Introduction of BST A binary search tree (BST) is defined as follows.
 The left subtree of a node contains only nodes with keys less than the node&rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&rsquo;s key. Both the left and right subtrees must also be binary search trees. Inorder traversal Recursively traverse the current node&rsquo;s left subtree. Visit the current node (in the figure: position green).]]></description>
 </item>
 <item>
   <title>Monotonic Stack</title>
-  <link>https://frizfealer.github.io/monotonic_stack/</link>
+  <link>http://localhost:1313/monotonic_stack/</link>
   <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>
   <author>xxxx</author>
-  <guid>https://frizfealer.github.io/monotonic_stack/</guid>
+  <guid>http://localhost:1313/monotonic_stack/</guid>
   <description><![CDATA[Introduction A monotonic stack is a stack that keeps its elements in a certain order. For example, an increasing monotonic stack is [x1, x2, …, xn] where x1 &lt;= x2 &lt;= … xn. This means that each element is equal to or larger than the previous one. Monotonic stacks are useful for some problems, e.g. where you need to find the next greater number for each number in an array. For such problems, the key words to look for are next (prev) greater (lesser).]]></description>
 </item>
 </channel>
