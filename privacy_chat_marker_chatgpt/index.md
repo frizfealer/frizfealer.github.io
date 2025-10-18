@@ -3,7 +3,7 @@
 
 # Privacy Policy for ChatGPT Conversation Bookmarks, ChatMarker
 
-**Last Updated:** October 17, 2024
+**Last Updated:** October 17, 2025
 
 ## Introduction
 
