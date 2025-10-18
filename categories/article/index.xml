@@ -3,7 +3,16 @@
     <title>Article - Category - </title>
     <link>https://frizfealer.github.io/categories/article/</link>
     <description>Article - Category - </description>
-    <generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 16 May 2023 23:03:26 -0400</lastBuildDate><atom:link href="https://frizfealer.github.io/categories/article/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Oct 2024 22:21:33 -0400</lastBuildDate><atom:link href="https://frizfealer.github.io/categories/article/" rel="self" type="application/rss+xml" /><item>
+  <title>Bst Inorder</title>
+  <link>https://frizfealer.github.io/bst-inorder/</link>
+  <pubDate>Tue, 01 Oct 2024 22:21:33 -0400</pubDate>
+  <author>xxxx</author>
+  <guid>https://frizfealer.github.io/bst-inorder/</guid>
+  <description><![CDATA[Introduction of BST A binary search tree (BST) is defined as follows.
+The left subtree of a node contains only nodes with keys less than the node&rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&rsquo;s key. Both the left and right subtrees must also be binary search trees. Inorder traversal Recursively traverse the current node&rsquo;s left subtree. Visit the current node (in the figure: position green).]]></description>
+</item>
+<item>
   <title>Monotonic Stack</title>
   <link>https://frizfealer.github.io/monotonic_stack/</link>
   <pubDate>Tue, 16 May 2023 23:03:26 -0400</pubDate>

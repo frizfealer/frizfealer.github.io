@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Draft - Tag - </title>
-    <link>http://localhost:1313/tags/draft/</link>
-    <description>Draft - Tag - </description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 02 Oct 2024 08:29:18 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/draft/" rel="self" type="application/rss+xml" /><item>
+    <title>Draft - Category - </title>
+    <link>http://localhost:1313/categories/draft/</link>
+    <description>Draft - Category - </description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 02 Oct 2024 08:29:18 -0400</lastBuildDate><atom:link href="http://localhost:1313/categories/draft/" rel="self" type="application/rss+xml" /><item>
   <title>Test</title>
   <link>http://localhost:1313/test/</link>
   <pubDate>Wed, 02 Oct 2024 08:29:18 -0400</pubDate>
@@ -46,15 +46,6 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description>
-</item>
-<item>
-  <title>First_post</title>
-  <link>http://localhost:1313/first_post/</link>
-  <pubDate>Sat, 03 Jun 2023 17:45:05 -0400</pubDate>
-  <author>xxxx</author>
-  <guid>http://localhost:1313/first_post/</guid>
-  <description><![CDATA[<h1 id="markdown-扩展语法">Markdown 扩展语法</h1>
-<p><strong>FixIt</strong> 主题提供了一些扩展的语法便于你撰写文章。</p>]]></description>
 </item>
 </channel>
 </rss>

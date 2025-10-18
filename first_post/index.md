@@ -33,6 +33,6 @@
 
 ---
 
-> Author: <no value>  
-> URL: https://frizfealer.github.io/first_post/  
+> Author: Yeu-Chern Harn  
+> URL: http://localhost:1313/first_post/  
 

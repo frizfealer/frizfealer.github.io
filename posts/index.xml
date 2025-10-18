@@ -3,7 +3,27 @@
     <title>All Posts - </title>
     <link>https://frizfealer.github.io/posts/</link>
     <description>All Posts | </description>
-    <generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 20 Sep 2023 08:49:18 -0400</lastBuildDate><atom:link href="https://frizfealer.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 17 Oct 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://frizfealer.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>Privacy Policy - ChatGPT Conversation Bookmarks</title>
+  <link>https://frizfealer.github.io/privacy_chat_marker_chatgpt/</link>
+  <pubDate>Fri, 17 Oct 2025 00:00:00 &#43;0000</pubDate>
+  <author>xxxx</author>
+  <guid>https://frizfealer.github.io/privacy_chat_marker_chatgpt/</guid>
+  <description><![CDATA[Privacy Policy for ChatGPT Conversation Bookmarks, ChatMarker Last Updated: October 17, 2024
+Introduction ChatGPT Conversation Bookmarks, ChatMarker (&ldquo;the Extension&rdquo;) is committed to protecting your privacy. This privacy policy explains how the Extension handles your data.
+Data Collection and Storage What Data is Stored Locally The Extension stores the following data locally on your device only:
+Bookmark Names: Custom names you provide when creating bookmarks Message Previews: Text excerpts from ChatGPT conversations that you explicitly bookmark Conversation URLs: URLs of the ChatGPT conversations containing your bookmarks Timestamps: Date and time when bookmarks were created Turn Indices: Internal identifiers for navigation purposes How Data is Stored All data is stored using Chrome&rsquo;s local storage API (chrome.]]></description>
+</item>
+<item>
+  <title>Bst Inorder</title>
+  <link>https://frizfealer.github.io/bst-inorder/</link>
+  <pubDate>Tue, 01 Oct 2024 22:21:33 -0400</pubDate>
+  <author>xxxx</author>
+  <guid>https://frizfealer.github.io/bst-inorder/</guid>
+  <description><![CDATA[Introduction of BST A binary search tree (BST) is defined as follows.
+The left subtree of a node contains only nodes with keys less than the node&rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&rsquo;s key. Both the left and right subtrees must also be binary search trees. Inorder traversal Recursively traverse the current node&rsquo;s left subtree. Visit the current node (in the figure: position green).]]></description>
+</item>
+<item>
   <title>摘要：一擲千金的上帝</title>
   <link>https://frizfealer.github.io/the_prodigal_god/</link>
   <pubDate>Wed, 20 Sep 2023 08:49:18 -0400</pubDate>

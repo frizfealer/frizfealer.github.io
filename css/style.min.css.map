@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/frizfealer/repos/my_website",
+	"sourceRoot": "/Users/yeu-chernharn/repos/hugo_website",
 	"sources": [
 		"themes/Fixit-0.2.18/assets/css/style.scss",
 		"themes/Fixit-0.2.18/assets/css/_variables.scss",
